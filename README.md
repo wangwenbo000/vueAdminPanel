@@ -1,5 +1,6 @@
 
-application created by VUE.js (http://cn.vuejs.org/)
+application created by
+VUE.js (http://cn.vuejs.org/) & bootstrap v4 alpha.2
 
 ## VueAdminPanel
 尝试使用vue组件和bootstrap做一个后台管理,方便未来项目使用.
