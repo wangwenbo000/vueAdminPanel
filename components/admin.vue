@@ -6,11 +6,15 @@
                 <Slider></Slider>
             </div>
             <div class="col-xs-10">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active">Data</li>
+                </ol>
                 <router-view transition="fade" transition-mode="out-in"></router-view>
             </div>
         </div>
     </div>
-
 </template>
 
 <script type="text/babel">
