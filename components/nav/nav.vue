@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+    <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
         <a class="navbar-brand" href="!#/">AdminPanel</a>
     </nav>
 </template>
