@@ -1,10 +1,15 @@
 <template>
     <div class="card">
         <div class="card-header">
-            公告列表
-            <a href="#!/addSituation" class="btn btn-primary btn-sm text-right">增加公告</a>
+            <h6>视频管理</h6>
         </div>
         <div class="card-block">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#!/addSituation" class="btn btn-primary btn-sm pull-right">增加公告</a>
+                </div>
+            </div>
+
             <table class="table table-striped table-hover">
                 <thead class="thead-default">
                 <tr>

@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card-header">
-            公告列表
+            <h6>团队管理</h6>
             <a href="#!/addSituation" class="btn btn-primary btn-sm text-right">增加公告</a>
         </div>
         <div class="card-block">

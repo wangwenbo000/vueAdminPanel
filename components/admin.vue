@@ -6,11 +6,6 @@
                 <Slider></Slider>
             </div>
             <div class="col-xs-10">
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Library</a></li>
-                    <li class="active">Data</li>
-                </ol>
                 <router-view transition="fade" transition-mode="out-in"></router-view>
             </div>
         </div>
@@ -30,4 +25,11 @@
 
 <style lang="sass">
 @import "style.scss";
+.fade-transition {
+    transition: opacity .3s ease;
+}
+
+.fade-enter, .fade-leave {
+    opacity: 0;
+}
 </style>
