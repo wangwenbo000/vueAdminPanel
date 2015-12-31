@@ -1,73 +1,29 @@
 <template>
     <div class="card">
         <div class="card-header">
-            公告列表
-            <button type="button" class="btn btn-primary btn-sm text-right">增加公告</button>
+            <strong>公告列表</strong>
         </div>
         <div class="card-block">
             <form>
                 <fieldset class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    <small class="text-muted">We'll never share your email with anyone else.</small>
+                    <label for="title">标题</label>
+                    <input type="text" class="form-control" id="title" placeholder="请输入文章大标题">
+                    <small class="text-muted">这个标题是显示在公告页面首页的</small>
                 </fieldset>
                 <fieldset class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </fieldset>
-                <fieldset class="form-group">
-                    <label for="exampleSelect1">Example select</label>
-                    <select class="form-control" id="exampleSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <label for="category">选择分类</label>
+                    <a href="#!/addSituation" class="btn btn-primary btn-sm">增加分类</a>
+                    <select class="form-control" id="category">
+                        <option>正在做</option>
+                        <option>行业动态</option>
+                        <option>更新</option>
                     </select>
+                    <small class="text-muted">请选择最新分类</small>
                 </fieldset>
                 <fieldset class="form-group">
-                    <label for="exampleSelect2">Example multiple select</label>
-                    <select multiple class="form-control" id="exampleSelect2">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
+                    <div id="editor"></div>
                 </fieldset>
-                <fieldset class="form-group">
-                    <label for="exampleTextarea">Example textarea</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                </fieldset>
-                <fieldset class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" class="form-control-file" id="exampleInputFile">
-                    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-                </fieldset>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                        Option one is this and that&mdash;be sure to include why it's great
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                        Option two can be something else and selecting it will deselect option one
-                    </label>
-                </div>
-                <div class="radio disabled">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                        Option three is disabled
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Check me out
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">发布新公告</button>
             </form>
         </div>
     </div>
@@ -75,7 +31,11 @@
 </template>
 
 <script type="text/babel">
-
+    export default{
+        ready(){
+            $('#editor').wysiwyg();
+        }
+    }
 </script>
 
 <style lang="sass?outputStyle=expanded">

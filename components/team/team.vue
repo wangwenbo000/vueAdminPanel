@@ -9,6 +9,7 @@
                 <thead class="thead-default">
                 <tr>
                     <th>#</th>
+                    <th>头像</th>
                     <th>新闻标题</th>
                     <th>发布时间</th>
                     <th>操作</th>
@@ -18,6 +19,7 @@
                 <tr>
                     <th scope="row">1</th>
                     <td>政治局召开民主生活会 习近平讲话</td>
+                    <td><img class="img-circle"></td>
                     <td>2015-08-08</td>
                     <td>
                         <div class="btn-group">

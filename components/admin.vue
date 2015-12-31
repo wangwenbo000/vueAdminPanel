@@ -28,6 +28,7 @@
 
 <style lang="sass">
 @import "style.scss";
+@import "style.scss";
 .fade-transition {
     transition: opacity .3s ease;
 }
