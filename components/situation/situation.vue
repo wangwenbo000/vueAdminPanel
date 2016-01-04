@@ -27,7 +27,7 @@
                             </button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">编辑</a>
-                                <a class="dropdown-item" href="#">删除</a>
+                                <a class="dropdown-item" href="javascript:;" @click="isDelete">删除</a>
                             </div>
                         </div>
                     </td>
@@ -91,7 +91,13 @@
 </template>
 
 <script type="text/babel">
-
+export default{
+    methods:{
+        isDelete(id){
+            window.confirm("确定要删除这条记录么?");
+        }
+    }
+}
 </script>
 
 <style lang="sass?outputStyle=expanded">
