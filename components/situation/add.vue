@@ -52,7 +52,7 @@
         ready(){
             tinymce.init({
                 selector:'#editor',
-                plugins: "image imagetools" ,
+                plugins: "image" ,
                 height: 360
             });
         },
