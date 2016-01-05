@@ -6,9 +6,9 @@
         <div class="card-block">
             <form>
                 <fieldset class="form-group">
-                    <label for="title">标题</label>
-                    <input type="text" class="form-control" id="title" placeholder="请输入文章大标题">
-                    <small class="text-muted">这个标题是显示在公告页面首页的</small>
+                    <label for="title">项目名称</label>
+                    <input type="text" class="form-control" id="title" placeholder="请输入项目标题">
+                    <small class="text-muted">项目的主标题</small>
                 </fieldset>
                 <fieldset class="form-group">
                     <label for="category">选择分类</label>
@@ -29,16 +29,12 @@
                 <fieldset class="form-group">
                     <label for="category">上传封面图</label>
                     <a href="#!/addSituation" class="btn btn-secondary btn-block">选择文件</a>
-                    <small class="text-muted">请选择最新分类</small>
+                    <small class="text-muted">作为项目列表封面,尺寸任意,但大小不超过800Kb</small>
                 </fieldset>
                 <fieldset class="form-group">
-                    <label for="category">撰写文章内容</label>
+                    <label for="category">项目描述</label>
                     <textarea id="editor" placeholder="Enter text ..." style=""></textarea>
-                    <small class="text-muted">请撰写文章内容,请不要再编辑器内使用代码,保证板式正确</small>
-                </fieldset>
-                <fieldset class="form-group">
-                    <input type="checkbox">
-                    <small class="text-muted">该篇文章不显示在首页,(可以修改,但首页显示最新5篇文章超过5篇首页可能不显示)</small>
+                    <small class="text-muted">请撰写文章内容,主要描述项目的图文细节,类似博客文章</small>
                 </fieldset>
                 <button type="submit" class="btn btn-primary">发布新公告</button>
             </form>
@@ -53,7 +49,7 @@
             tinymce.init({
                 selector:'#editor',
                 plugins: "image imagetools" ,
-                height: 360
+                height: 200
             });
             $('.selectpicker').selectpicker({
                 style:'btn-secondary',

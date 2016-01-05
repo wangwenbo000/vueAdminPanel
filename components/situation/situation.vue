@@ -4,10 +4,10 @@
             公告列表
         </div>
         <div class="card-block">
-            <a href="#!/addSituation" class="btn btn-primary btn-sm text-right">增加公告</a>
+            <a href="#!/addSituation" class="btn btn-primary btn-sm text-right"><i class="fa fa-cloud-upload"></i> 增加公告</a>
             <div class="dropdown-divider"></div>
             <table class="table table-striped table-hover">
-                <thead class="thead-default">
+                <thead>
                 <tr>
                     <th>#</th>
                     <th>新闻标题</th>

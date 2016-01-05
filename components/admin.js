@@ -11,8 +11,12 @@ import Index from './index/index.vue'
 import Situation from './situation/situation.vue'
 import Addstiuation from './situation/add.vue'
 import Video from './video/video.vue'
+import AddVideo from './video/add.vue'
 import Graphic from './graphic/graphic.vue'
+import addGraphic from './graphic/add.vue'
 import Team from './team/team.vue'
+import addMember from './team/add.vue'
+import Job from './job/job.vue'
 
 //vue路由设置
 Vue.use(Router);
@@ -20,22 +24,44 @@ var router=new Router();
 
 router.map({
   '/': {
+    name: 'Index',
     component: Index
   },
-  '/situation':{
-    component:Situation
+  '/situation': {
+    name: 'situation',
+    component: Situation
   },
-  'addSituation':{
-    component:Addstiuation
+  'addSituation': {
+    name: 'situation',
+    component: Addstiuation
   },
-  'video':{
-    component:Video
+  'video': {
+    name: 'video',
+    component: Video
   },
-  'graphic':{
-    component:Graphic
+  'addVideo': {
+    name: 'video',
+    component: AddVideo
   },
-  'team':{
-    component:Team
+  'graphic': {
+    name: 'graphic',
+    component: Graphic
+  },
+  'addGraphic': {
+    name: 'graphic',
+    component: addGraphic
+  },
+  'team': {
+    name: 'team',
+    component: Team
+  },
+  'addMember': {
+    name: 'team',
+    component: addMember
+  },
+  'job':{
+    name:'job',
+    component:Job
   }
 });
 

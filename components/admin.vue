@@ -2,7 +2,7 @@
     <Topnav></Topnav>
     <div class="container">
         <div class="alert alert-success text-center" role="alert">
-            <strong>Well done!</strong> You successfully read this important alert message.
+            <strong>Well done!</strong> {{$route.name}}{{$route.path}}
         </div>
         <div class="row">
             <div class="col-xs-2">
