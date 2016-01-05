@@ -2,39 +2,26 @@
     <Statistics></Statistics>
     <div class="card">
         <div class="card-header">
-            控制台通告
+            <i class="fa fa-microphone"></i> <strong>控制台通告</strong>
         </div>
         <div class="card-block">
-            <table class="table table-striped table-hover">
-                <thead class="thead-default">
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-                </tbody>
-            </table>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <i class="fa fa-bolt text-warning"></i> &nbsp;
+                    <a href="javascript:;">“空格APP”入下载榜前三 打响“共享经济”第一枪</a>
+                    <p class="text-muted pull-right">2014-08-08</p>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-bolt text-warning"></i> &nbsp;
+                    <a href="javascript:;">“空格”正在做基于人与人闭环交易的 S2C, 将会是 O2O 的下一个...</a>
+                    <p class="text-muted pull-right">2014-08-08</p>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-bolt text-warning"></i> &nbsp;
+                    <a href="javascript:;">O2O 资本寒冬下,致力于发掘个人服务的空格获 1 亿元 A 轮融资</a>
+                    <p class="text-muted pull-right">2014-08-08</p>
+                </li>
+            </ul>
         </div>
     </div>
 </template>

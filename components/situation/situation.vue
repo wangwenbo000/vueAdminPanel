@@ -21,14 +21,9 @@
                     <td>政治局召开民主生活会 习近平讲话</td>
                     <td>2015-08-08</td>
                     <td>
-                        <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                操作
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">编辑</a>
-                                <a class="dropdown-item" href="javascript:;" @click="isDelete">删除</a>
-                            </div>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-pencil-square-o"></i></button>
+                            <button type="button" class="btn btn-secondary" @click="isDelete"><i class="fa fa-trash-o"></i></button>
                         </div>
                     </td>
                 </tr>
@@ -37,13 +32,9 @@
                     <td>万科只是开始 保险公司的下一个目标是谁(危险名单)</td>
                     <td>2015-12-12</td>
                     <td>
-                        <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                操作
-                            </button>
-                            <div class="dropdown-menu">
-                                ...
-                            </div>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-pencil-square-o"></i></button>
+                            <button type="button" class="btn btn-secondary" @click="isDelete"><i class="fa fa-trash-o"></i></button>
                         </div>
                     </td>
                 </tr>
@@ -52,13 +43,9 @@
                     <td>湖南“吸毒市长”被逮捕 曾与毒友长期保持性关系</td>
                     <td>2015-10-08</td>
                     <td>
-                        <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                操作
-                            </button>
-                            <div class="dropdown-menu">
-                                操作
-                            </div>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-pencil-square-o"></i></button>
+                            <button type="button" class="btn btn-secondary" @click="isDelete"><i class="fa fa-trash-o text-danger"></i></button>
                         </div>
                     </td>
                 </tr>

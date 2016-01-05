@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card-header">
-            视频列表 <small>视频托管服务商为爱奇艺视频</small>
+            视频列表 <small class="text-muted">视频托管服务商为爱奇艺视频</small>
         </div>
         <div class="card-block">
             <a href="#!/addVideo" class="btn btn-primary btn-sm text-right"><i class="fa fa-plus-circle"></i> 上传视频</a>

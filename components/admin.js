@@ -2,6 +2,7 @@
  * Created by wangwenbo on 15/12/29.
  */
 import Dropdown from '../bootstrap/js/dropdown.js'
+import Tab from '../bootstrap/js/tab.js'
 import Vue from 'vue'
 import Router from 'vue-router'
 import App from './admin.vue'
