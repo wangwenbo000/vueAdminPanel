@@ -16,7 +16,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel " class="tab-pane active p-t-md" id="home">
-                    <a href="#!/addSituation" class="btn btn-primary btn-sm text-right"><i class="fa fa-plus-circle"></i> 增加招聘需求</a>
+                    <a href="#!/addJob" class="btn btn-primary btn-sm text-right"><i class="fa fa-plus-circle"></i> 增加招聘需求</a>
                     <div class="dropdown-divider"></div>
                     <table class="table table-striped table-hover">
                         <thead>
@@ -39,14 +39,9 @@
                             <td>2</td>
                             <td>2015-08-08</td>
                             <td>
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        操作
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">编辑</a>
-                                        <a class="dropdown-item" href="javascript:;" @click="isDelete">删除</a>
-                                    </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-secondary"><i class="fa fa-pencil-square-o"></i></button>
+                                    <button type="button" class="btn btn-secondary" @click="isDelete"><i class="fa fa-trash-o text-danger"></i></button>
                                 </div>
                             </td>
                         </tr>

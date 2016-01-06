@@ -1,16 +1,15 @@
 <template>
     <div class="card">
         <div class="card-header">
-            设计作品列表
+            <strong>剧照专题列表</strong>
         </div>
         <div class="card-block">
-            <a href="#!/addGraphic" class="btn btn-primary btn-sm text-right"><i class="fa fa-plus-circle"></i> 上传新的设计作品</a>
+            <a href="#!/addPhotos" class="btn btn-primary btn-sm text-right"><i class="fa fa-plus-circle"></i>  增加剧照专题</a>
             <div class="dropdown-divider"></div>
             <table class="table table-striped table-hover">
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>缩略图</th>
                     <th>新闻标题</th>
                     <th>发布时间</th>
                     <th>操作</th>
@@ -18,10 +17,9 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td><img src="" alt=""></td>
-                    <td>政治局召开民主生活会 习近平讲话</td>
-                    <td>2015-08-08</td>
+                    <th scope="row">3</th>
+                    <td>湖南“吸毒市长”被逮捕 曾与毒友长期保持性关系</td>
+                    <td>2015-10-08</td>
                     <td>
                         <div class="btn-group btn-group-sm" role="group" aria-label="...">
                             <button type="button" class="btn btn-secondary"><i class="fa fa-pencil-square-o"></i></button>

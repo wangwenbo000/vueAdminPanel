@@ -18,6 +18,9 @@ import addGraphic from './graphic/add.vue'
 import Team from './team/team.vue'
 import addMember from './team/add.vue'
 import Job from './job/job.vue'
+import addJob from './job/add.vue'
+import Photos from './photos/photos.vue'
+import addPhotos from './photos/add.vue'
 
 //vue路由设置
 Vue.use(Router);
@@ -63,6 +66,18 @@ router.map({
   'job':{
     name:'job',
     component:Job
+  },
+  'addJob':{
+    name:'job',
+    component:addJob
+  },
+  'photos':{
+    name:'photos',
+    component:Photos
+  },
+  'addPhotos':{
+    name:'photos',
+    component:addPhotos
   }
 });
 

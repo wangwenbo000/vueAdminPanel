@@ -14,7 +14,7 @@
         <a href="#" name="a" class="list-group-item" v-bind:class="[$route.name=='Index'?'active':'']"><i class="fa fa-tachometer"></i> 控制台</a>
         <a href="#!/situation" class="list-group-item" v-bind:class="[$route.name=='situation'?'active':'']"><i class="fa fa-newspaper-o"></i> 新闻发布</a>
         <a href="#!/video" class="list-group-item" v-bind:class="[$route.name=='video'?'active':'']"><i class="fa fa-youtube-play"></i> 视频管理</a>
-        <a href="#!/photo" class="list-group-item" v-bind:class="[$route.name=='photo'?'active':'']"><i class="fa fa-camera"></i> 项目剧照</a>
+        <a href="#!/photos" class="list-group-item" v-bind:class="[$route.name=='photos'?'active':'']"><i class="fa fa-camera"></i> 项目剧照</a>
         <a href="#!/graphic" class="list-group-item" v-bind:class="[$route.name=='graphic'?'active':'']"><i class="fa fa-diamond"></i> 平面管理</a>
         <a href="#!/team" class="list-group-item" v-bind:class="[$route.name=='team'?'active':'']"><i class="fa fa-users"></i> 团队管理</a>
         <a href="#!/job" class="list-group-item" v-bind:class="[$route.name=='job'?'active':'']">
