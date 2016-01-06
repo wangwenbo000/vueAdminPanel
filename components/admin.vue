@@ -1,9 +1,6 @@
 <template>
     <Topnav></Topnav>
     <div class="container">
-        <div class="alert alert-success text-center" role="alert">
-            <strong>Well done!</strong> {{$route.name}}{{$route.path}}
-        </div>
         <div class="row">
             <div class="col-xs-2">
                 <Slider></Slider>
@@ -18,7 +15,39 @@
 <script type="text/babel">
     import Topnav from './nav/nav.vue'
     import Slider from './slider/slider.vue'
+    var stack_bar_top = {"dir1":"down", "dir2":"right", "push":"top"};
+    function show_stack_bar_top(type) {
+        var opts = {
+            title: "Over Here",
+            text: "Check me out. I'm in a different stack.",
+            addclass: "stack-bar-top",
+            cornerclass: "",
+            width: "100%",
+            stack: stack_bar_top
+        };
+        switch (type) {
+            case 'error':
+                opts.title = "Oh No";
+                opts.text = "Watch out for that water tower!";
+                opts.type = "error";
+                break;
+            case 'info':
+                opts.title = "Breaking News";
+                opts.text = "Have you met Ted?";
+                opts.type = "info";
+                break;
+            case 'success':
+                opts.title = "Good News Everyone";
+                opts.text = "I've invented a device that bites shiny metal asses.";
+                opts.type = "success";
+                break;
+        }
+        new PNotify(opts);
+    }
     export default{
+        ready(){
+            show_stack_bar_top("success");
+        },
         components: {
             Topnav,
             Slider
