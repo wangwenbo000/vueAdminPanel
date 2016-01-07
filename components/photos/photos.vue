@@ -10,7 +10,7 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>新闻标题</th>
+                    <th>专题</th>
                     <th>发布时间</th>
                     <th>操作</th>
                 </tr>
@@ -18,7 +18,7 @@
                 <tbody>
                 <tr>
                     <th scope="row">3</th>
-                    <td>湖南“吸毒市长”被逮捕 曾与毒友长期保持性关系</td>
+                    <td>麻辣变形计剧照</td>
                     <td>2015-10-08</td>
                     <td>
                         <div class="btn-group btn-group-sm" role="group" aria-label="...">

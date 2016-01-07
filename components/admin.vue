@@ -44,9 +44,10 @@
         }
         new PNotify(opts);
     }
+    show_stack_bar_top("success");
     export default{
         ready(){
-            show_stack_bar_top("success");
+
         },
         components: {
             Topnav,
@@ -64,5 +65,8 @@
 
 .fade-enter, .fade-leave {
     opacity: 0;
+}
+.uploadForm .form-control{
+    line-height: 0.9;
 }
 </style>

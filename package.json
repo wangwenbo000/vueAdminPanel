@@ -45,6 +45,7 @@
     "vue-html-loader": "^1.0.0",
     "vue-loader": "^7.4.1",
     "vue-router": "^0.7.7",
+    "vue-validator": "^2.0.0-alpha.9",
     "webpack": "^1.12.9"
   }
 }

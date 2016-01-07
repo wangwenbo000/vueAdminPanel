@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card-header">
-            公告列表
+            团队人员列表
         </div>
         <div class="card-block">
             <a href="#!/addMember" class="btn btn-primary btn-sm text-right"><i class="fa fa-plus-circle"></i> 增加团队人员</a>

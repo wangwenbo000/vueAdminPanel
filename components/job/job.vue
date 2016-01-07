@@ -22,10 +22,9 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>照片</th>
-                            <th>姓名</th>
                             <th>职业</th>
-                            <th>排序</th>
+                            <th>名额</th>
+                            <th>薪资待遇</th>
                             <th>发布时间</th>
                             <th>操作</th>
                         </tr>
@@ -33,10 +32,9 @@
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <th><img src="" alt="" class="img-circle"></th>
-                            <td>张道飞</td>
                             <td>摄影师,摄影指导</td>
                             <td>2</td>
+                            <td>20000</td>
                             <td>2015-08-08</td>
                             <td>
                                 <div class="btn-group btn-group-sm" role="group" aria-label="...">
@@ -91,14 +89,9 @@
                             <td>摄影师,摄影指导</td>
                             <td>2015-08-08</td>
                             <td>
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        操作
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">编辑</a>
-                                        <a class="dropdown-item" href="javascript:;" @click="isDelete">删除</a>
-                                    </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-secondary"><i class="fa fa-pencil-square-o"></i></button>
+                                    <button type="button" class="btn btn-secondary" @click="isDelete"><i class="fa fa-trash-o text-danger"></i></button>
                                 </div>
                             </td>
                         </tr>

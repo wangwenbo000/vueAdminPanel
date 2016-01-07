@@ -5,6 +5,7 @@ import Dropdown from '../bootstrap/js/dropdown.js'
 import Tab from '../bootstrap/js/tab.js'
 import Vue from 'vue'
 import Router from 'vue-router'
+import VueValidator from 'vue-validator'
 import App from './admin.vue'
 
 //admin Components
@@ -24,6 +25,8 @@ import addPhotos from './photos/add.vue'
 
 //vue路由设置
 Vue.use(Router);
+Vue.use(VueValidator);
+
 var router=new Router();
 
 router.map({
