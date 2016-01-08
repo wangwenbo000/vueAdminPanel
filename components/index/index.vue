@@ -11,16 +11,6 @@
                     <a href="javascript:;">“空格APP”入下载榜前三 打响“共享经济”第一枪</a>
                     <p class="text-muted pull-right">2014-08-08</p>
                 </li>
-                <li class="list-group-item">
-                    <i class="fa fa-bolt text-warning"></i> &nbsp;
-                    <a href="javascript:;">“空格”正在做基于人与人闭环交易的 S2C, 将会是 O2O 的下一个...</a>
-                    <p class="text-muted pull-right">2014-08-08</p>
-                </li>
-                <li class="list-group-item">
-                    <i class="fa fa-bolt text-warning"></i> &nbsp;
-                    <a href="javascript:;">O2O 资本寒冬下,致力于发掘个人服务的空格获 1 亿元 A 轮融资</a>
-                    <p class="text-muted pull-right">2014-08-08</p>
-                </li>
             </ul>
         </div>
     </div>

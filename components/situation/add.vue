@@ -31,7 +31,7 @@
                 </fieldset>
                 <fieldset class="form-group uploadForm" >
                     <label for="category">上传封面图</label>
-                    <input id="input-dim-1" name="inputdim1[]" type="file" multiple class="file-loading" accept="image/*">
+                    <Uploadcover></Uploadcover>
                     <small class="text-muted">请选择最新分类</small>
                 </fieldset>
                 <fieldset class="form-group">
@@ -51,6 +51,7 @@
 </template>
 
 <script type="text/babel">
+    import Uploadcover from './upload.vue'
     export default{
         ready(){
             tinymce.init({
@@ -58,19 +59,12 @@
                 plugins: "image imagetools",
                 height: 360
             });
-            $("#input-dim-1").fileinput({
-                uploadUrl: "/file-upload-batch/2",
-                showCancel:false,
-                showRemove:false,
-                allowedFileExtensions: ["jpg", "png", "gif"],
-                minImageWidth: 50,
-                minImageHeight: 50,
-                uploadClass:'btn btn-secondary',
-                removeIcon:"<i class='fa fa-trash-o text-danger'></i> &nbsp"
-            });
         },
         beforeDestroy(){
             tinymce.remove("#editor");
+        },
+        components:{
+            Uploadcover
         }
     }
 </script>

@@ -27,7 +27,7 @@ import addPhotos from './photos/add.vue'
 Vue.use(Router);
 Vue.use(VueValidator);
 
-var router=new Router();
+var router = new Router();
 
 router.map({
   '/': {
@@ -66,21 +66,21 @@ router.map({
     name: 'team',
     component: addMember
   },
-  'job':{
-    name:'job',
-    component:Job
+  'job': {
+    name: 'job',
+    component: Job
   },
-  'addJob':{
-    name:'job',
-    component:addJob
+  'addJob': {
+    name: 'job',
+    component: addJob
   },
-  'photos':{
-    name:'photos',
-    component:Photos
+  'photos': {
+    name: 'photos',
+    component: Photos
   },
-  'addPhotos':{
-    name:'photos',
-    component:addPhotos
+  'addPhotos': {
+    name: 'photos',
+    component: addPhotos
   }
 });
 
