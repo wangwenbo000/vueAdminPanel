@@ -33,18 +33,21 @@
             <i class="fa fa-eye"></i> 人才招聘
             <span class="label label-pill label-danger pull-right">2</span>
         </a>
-        <a href="#!/opensource" class="list-group-item"
-           :class="[$route.name=='opensource'?'active':'']">
+        <a href="javascript:;" class="list-group-item"
+           :class="[$route.name=='opensource'?'active':'']" data-toggle="modal" data-target="#myModal">
             <i class="fa fa-github-alt"></i> 开源库
         </a>
     </div>
+    <Opensource></Opensource>
 </template>
 
 <script type="text/babel">
     import Panel from './panel.vue'
+    import Opensource from './opensource.vue'
     export default{
         components: {
-            Panel
+            Panel,
+            Opensource
         }
     }
 </script>

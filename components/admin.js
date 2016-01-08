@@ -3,6 +3,7 @@
  */
 import Dropdown from '../bootstrap/js/dropdown.js'
 import Tab from '../bootstrap/js/tab.js'
+import Modal from '../bootstrap/js/modal.js'
 import Vue from 'vue'
 import Router from 'vue-router'
 import VueValidator from 'vue-validator'

@@ -48,12 +48,12 @@
                 </fieldset>
                 <fieldset class="form-group">
                     <label for="category">上传封面图</label>
-                    <input id="input-20" type="file" class="file-loading">
+                    <Uploadvideocover></Uploadvideocover>
                     <small class="text-muted">上传图片质量限制在800Kb,最佳分辨率300px × 300px</small>
                 </fieldset>
                 <fieldset class="form-group uploadForm">
                     <label for="category">上传视频</label>
-                    <input id="input-dim-1" name="inputdim1[]" type="file" multiple class="file-loading" accept="image/*">
+                    <Uploadvideos></Uploadvideos>
                     <small class="text-muted">请选择需要上传的视频文件,单个上传大小无限制</small>
                 </fieldset>
                 <fieldset class="form-group">
@@ -69,6 +69,9 @@
 </template>
 
 <script type="text/babel">
+    import Uploadvideocover from './uploadvideocover.vue'
+    import Uploadvideos from './uploadvideos.vue'
+
     export default{
         ready(){
             tinymce.init({
@@ -80,26 +83,13 @@
                 viewMode: 'years',
                 format: 'MM/YYYY'
             });
-            $("#input-20").fileinput({
-                browseClass: "btn btn-primary btn-block",
-                showCancel:false,
-                showCaption: false,
-                showRemove: false,
-                showUpload: false
-            });
-            $("#input-dim-1").fileinput({
-                uploadUrl: "/file-upload-batch/2",
-                showCancel:false,
-                showRemove:false,
-                allowedFileExtensions: ["jpg", "png", "gif"],
-                minImageWidth: 50,
-                minImageHeight: 50,
-                uploadClass:'btn btn-secondary',
-                removeIcon:"<i class='fa fa-trash-o text-danger'></i> &nbsp"
-            });
         },
         beforeDestroy(){
             tinymce.remove("#editor");
+        },
+        components:{
+            Uploadvideocover,
+            Uploadvideos
         }
     }
 </script>
